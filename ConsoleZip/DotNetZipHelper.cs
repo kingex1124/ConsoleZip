@@ -93,6 +93,7 @@ namespace ConsoleZip
             }
         }
 
+        #region 單檔不落地壓縮
 
         /// <summary>
         /// 檔案不可以太大(1GB以內)
@@ -213,6 +214,8 @@ namespace ConsoleZip
 
         #endregion
 
+        #endregion
+
         #region 多檔案壓縮
 
         /// <summary>
@@ -301,6 +304,8 @@ namespace ConsoleZip
                 return ZipExecuteResult.Fail(ex.ToString());
             }
         }
+
+        #region 多檔不落地壓縮
 
         /// <summary>
         /// 檔案不可以太大(1GB以內)
@@ -503,6 +508,8 @@ namespace ConsoleZip
                 return ZipExecuteResult<Stream>.Fail(ex.ToString());
             }
         }
+
+        #endregion
 
         #endregion
 
